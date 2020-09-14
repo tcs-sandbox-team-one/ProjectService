@@ -13,7 +13,7 @@ namespace ProjectService.Database
         public DbSet<project> Projects { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(@"server=localhost; port=3306; database=projectdb; user=root; password=123456");
+            optionsBuilder.UseMySql(@"server=mysql; port=3306; database=projectdb; user=root; password=password");
         }
     }
 }
